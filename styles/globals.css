@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Matter";
+  src: url("../public/font/matter/Matter-Regular.otf");
+}
+
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../public/font/GTWalsheimPro-Regular/GTWalsheimPro-Regular.ttf");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, "Matter",
+    sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../public/assets/bg.svg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.ant-select-item-option-grouped {
+  padding-inline-start: 12px !important;
+}
+
+.ant-select-selector {
+  height: 44px !important;
+}
+
+.ant-select-selection-item {
+  padding-top: 8px !important;
+}
+
+.ant-select-selector {
+  border-radius: 10px !important;
+}
