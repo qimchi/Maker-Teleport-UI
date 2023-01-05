@@ -2,22 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Matter";
-  src: url("../public/font/matter/Matter-Regular.otf");
-}
-
-@font-face {
-  font-family: "GTWalsheimPro";
-  src: url("../public/font/GTWalsheimPro-Regular/GTWalsheimPro-Regular.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, "Matter",
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, "Inter",
     sans-serif;
 }
 
@@ -31,7 +23,12 @@ a {
 }
 
 body {
-  background-image: url("../public/assets/bg.svg");
+  /* background-image: url("../public/assets/bg.svg");*/
+  background: linear-gradient(
+    180deg,
+    rgba(26, 171, 155, 0.11) 0%,
+    rgba(26, 171, 155, 0) 100%
+  );
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -42,13 +39,40 @@ body {
 }
 
 .ant-select-selector {
-  height: 44px !important;
+  height: 56px !important;
+}
+
+.ant-input {
+  height: 56px !important;
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  line-height: 32px !important;
+}
+
+.ant-input-group .ant-input-group-addon {
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  background-color: white !important;
 }
 
 .ant-select-selection-item {
-  padding-top: 8px !important;
+  padding-top: 14px !important;
 }
 
 .ant-select-selector {
   border-radius: 10px !important;
+}
+
+.ant-switch {
+  background-color: #f4f6f6 !important;
+}
+
+.ant-switch.ant-switch-checked {
+  background-color: #1aab9b !important;
+}
+
+.ant-tooltip .ant-tooltip-inner {
+  padding: 16px !important;
 }
