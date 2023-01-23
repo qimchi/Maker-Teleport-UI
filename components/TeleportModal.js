@@ -1,4 +1,4 @@
-import { Modal, Timeline } from "antd";
+import { Modal } from "antd";
 import Image from "next/image";
 import React from "react";
 import { LoadingOutlined } from "@ant-design/icons";
@@ -91,58 +91,6 @@ const TeleportModal = ({ isModalOpen, handleOk, handleCancel }) => {
           </div>
         </div>
       </div>
-
-      {/* <Timeline dot={dotIcon}>
-        <Timeline.Item>
-          <div className="flex items-center p-6 bg-[#F3FBFA] rounded-2xl">
-            <LoadingOutlined
-              style={{
-                fontSize: "40px",
-                color: "#1AAB9B",
-                fontWeight: "bold",
-              }}
-            />
-            <div className="ml-6">
-              <h2 className="font-inter font-bold text-xl text-darkBlack">
-                Burning on L2 Network
-              </h2>
-              <p>
-                tx id: <span>0x27ede...7858</span>
-              </p>
-            </div>
-          </div>
-        </Timeline.Item>
-        <Timeline.Item>
-          <div className="flex items-center p-6">
-            <div className="w-14 h-14 bg-[#C8CBCD] rounded-full"></div>
-            <div className="ml-6">
-              <h2 className="font-inter font-bold text-xl text-darkBlack">
-                Validating transaction
-              </h2>
-            </div>
-          </div>
-        </Timeline.Item>
-        <Timeline.Item>
-          <div className="flex items-center p-6">
-            <div className="w-14 h-14 bg-[#C8CBCD] rounded-full"></div>
-            <div className="ml-6">
-              <h2 className="font-inter font-bold text-xl text-darkBlack">
-                Minting on L1 Network
-              </h2>
-            </div>
-          </div>
-        </Timeline.Item>
-        <Timeline.Item>
-          <div className="flex items-center p-6">
-            <div className="w-14 h-14 bg-[#C8CBCD] rounded-full"></div>
-            <div className="ml-6">
-              <h2 className="font-inter font-bold text-xl text-darkBlack">
-                Validating transaction
-              </h2>
-            </div>
-          </div>
-        </Timeline.Item>
-      </Timeline> */}
     </Modal>
   );
 };

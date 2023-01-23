@@ -76,7 +76,7 @@ const Token = () => {
 
   return (
     <>
-      <div className="px-10 py-5 flex justify-center items-center mt-[59px] lg:mb-0 mb-10">
+      <div className="sm:px-10 sm:py-5 py-5 px-4 flex justify-center items-center sm:mt-[59px] mt-5 lg:mb-0 mb-10">
         <div className="border border-solid border-[#E0E0E0] p-4 rounded-[10px] md:w-[464px] w-full bg-white">
           <div className="relative">
             <div className="bg-borderColor rounded-2xl p-4 mb-2">
